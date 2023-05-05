@@ -1,0 +1,16 @@
+file = open("srpages/words.txt",'r')
+
+wordic = {}
+for n in range(1,15):
+    wordic[n] = []
+
+for n in file:
+    sneeb = n.split()
+    for m in sneeb:
+        if m not in wordic[len(m)]:
+            wordic[len(m)].append(m)
+
+print(wordic)
+
+
+{1: ['A', 'I'], 2: ['TO', 'BE', 'tE', 'DO', 'OR', 'IS', 'OF', 'IT', 'AN', 'WE', 'GO', 'HE', 'AM', 'SO', 'BY', 'IF', 'VS', 'IN', 'MY', 'NO', 'ON', 'tg'], 3: ['tIS', 'YOV', 'D)t', 'NOT', 'FOR', 'ALL', 'ARE', 'tgS', 'END', ')SY', 'BVT', 'WHO', 'WAY', 'ONE', 'AND', 'tAT', 'OVR', 'GOg', 'MAY', 'BEg', 'LAW', ')CH', 'OWN', 'MAN', 'WIt', 'HIS', 'WAS', 'SAY', 'OFF', 'LOg', 'tEN', 'DAY', 'TOO', 'TWO', 'NOW', 'W)C', 'tEM', 'CAN', 'tVS', 'H)D', 'WEB', 'OVT'], 4: ['NOtg', 'FROM', 'BOOC', 'WHAT', 'CNOW', 'TRVE', 'TEST', 'FIND', 'YOVR', 'TRVt', 'EDIT', 'tEIR', 'SOME', 'VOID', 'FORM', 'GR)T', 'TRIP', 'tOSE', 'HERE', 'ALOg', 'WILL', 'SELF', 'DEEP', 'LICE', 'ONLY', 'VNTO', 'HOLY', 'COAN', 'WENT', 'DOOR', 'TOLD', 'NAME', 'MORE', 'BODY', 'tINC', 'ELSE', 'COME', 'FOVR', 'LOSS', 'tREE', 'MVCH', 'HAVE', 'tERE', 'LVCC', 'NEED', 'MOST', 'WORt', 'LOSE', 'GAIN', 'W)Lt', 'MIND', 'DVRg', 'SAID', 'WHEN', 'M)NT', 'DONT', 'HAND', 'TELL', 'JVST', 'WERE', 'PAGE', 'DVTY', 'SEEC', 'MVST', 'SHED'], 5: ['WARNg', 'CHAgE', 'WItIN', 'EItER', 'WORDS', 'CABAL', 'SHAPE', 'LIVES', 'STVDY', 'ASCED', 'AGAIN', 'HVMAN', 'AFTER', 'GETTg', 'COVLD', 'ANYtg', 'PAVSE', 'WHICH', 'CAVSE', 'STROg', 'LATER', 'DOGMA', 'BELOg', 'RIGHT', 'R)SON', 'ABOVT', 'AMASS', 'NEVER', 'VOICE', 'OtERS', 'EVERY'], 6: ['EXCEPT', 'SACRED', 'WISDOM', 'PRIMES', 'SHOVLD', '(tER)L', 'CARNAL', 'MOBIVS', 'ANALOG', 'TOWARD', 'R)LITY', 'tROVGH', 'ARRIVE', 'INSTAR', 'EMERGE', 'WIDSOM', 'MASTER', 'WISHES', 'CALLED', 'tOVGHT', 'MOMENT', 'MERELY', 'ERRORS', 'ENOVGH', 'OBTAIN', 'FOLLOW', 'BECOME', 'LESSON', 'INSIDE', 'RAISED', 'IMPOSE', 'EXISTS', 'HASHES'], 7: ['BELIEVE', 'MESSAGE', 'NVMBERS', 'TOTIENT', 'FVNCTiN', 'SHADOWS', 'BVFFERS', 'OBSCVRA', 'WELCOME', 'PILGRIM', 'JOVRNEY', 'SVFFERg', 'OVTSIDE', 'COMMAND', 'DECIDED', 'STVDENT', 'REPLIED', 'FINALLY', 'SPECIES', 'STARTED', 'TRAILED', 'CONSVME', 'BECAVSE', 'BELEIVE', 'FOLLOWg', 'CONSVMg', 'DESTROY', 'PROGRAM', 'EXPLAIN', 'STOPPED', 'CWESTiN', 'PARABLE', 'TVNNELg', 'SVRFACE'], 8: ['MOVRNFVL', 'STRVGGLE', 'ILLVSiNS', 'DISCOVER', 'R)LITIES', 'YOVRSELF', 'CONFVSED', 'ANSWERED', 'INHABITg', 'DIVINITY', 'BEHAViRS', 'DECEPTiN', 'PRESERVE', 'PRESERVg', 'ATTACHED', 'PREPARED', 'STVDENTS'], 9: ['CNOWLEDGE', 'CONTAINED', 'ENCRYPTED', 'NECESSARY', 'INNOCENCE', 'CERTAINTY', 'OVRSELVES', 'PROFESSOR', 'ARBITRARY', 'IRRITATED', 'PRACTICES', 'ADHERENCE', 'PRIMALITY', 'EXPLAINED'], 10: ['EXPERIENCE', 'VLTIMATELY', 'PILGRIMAGE', 'INSTRVCTiN', 'CONSVMPTiN'], 11: ['VNR)SONABLE', 'PRESERVATiN', 'ENLIGHTENED'], 12: ['INTELLIGENCE', 'CONSCiVSNESS'], 13: ['CIRCVMFERENCE'], 14: ['CIRCVMFERENCES']}
